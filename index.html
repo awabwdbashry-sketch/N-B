@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Noir & Bean — A luxury coffee experience in the heart of the city. Premium single-origin beans, expertly crafted." />
+  <meta name="keywords" content="luxury coffee shop, premium coffee, espresso, specialty coffee, café" />
+  <meta name="author" content="Noir & Bean" />
+  <meta property="og:title" content="Noir & Bean — Luxury Coffee" />
+  <meta property="og:description" content="Where every cup tells a story." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://noirandbean.com/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&q=80" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Noir & Bean — Luxury Coffee" />
+  <meta name="twitter:description" content="Where every cup tells a story." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&q=80" />
+  <meta name="theme-color" content="#0a0806" />
+  <link rel="canonical" href="https://noirandbean.com/" />
+  <link rel="apple-touch-icon" href="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=180&h=180&fit=crop&q=80" />
+  <title>Noir &amp; Bean — Luxury Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loader" class="loader" role="status" aria-label="Loading">
+    <div class="loader__ring">
+      <div class="loader__bean"></div>
+    </div>
+    <p class="loader__text">Brewing your experience…</p>
+  </div>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav" id="navbar" role="banner">
+    <nav class="nav__inner container" aria-label="Main navigation">
+      <a href="#hero" class="nav__logo" aria-label="Noir & Bean home">
+        <span class="nav__logo-mark">N&amp;B</span>
+        <span class="nav__logo-name">Noir <em>&amp;</em> Bean</span>
+      </a>
+
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#featured" class="nav__link">Featured</a></li>
+        <li><a href="#menu" class="nav__link">Menu</a></li>
+        <li><a href="#offers" class="nav__link">Offers</a></li>
+        <li><a href="#gallery" class="nav__link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav__link">Reviews</a></li>
+        <li><a href="#reservation" class="nav__link">Reserve</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero__bg">
+        <div class="hero__overlay"></div>
+        <!-- Animated coffee steam particles -->
+        <div class="hero__particles" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow reveal-text">Est. 2019 — Single Origin Specialists</p>
+        <h1 class="hero__heading">
+          <span class="hero__heading-line" id="typing-target"></span>
+        </h1>
+        <p class="hero__sub">Where darkness meets depth — every cup is a ritual, every sip a revelation.</p>
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--gold ripple">Explore Menu</a>
+          <a href="#reservation" class="btn btn--ghost ripple">Book a Table</a>
+        </div>
+        <div class="hero__scroll-hint" aria-hidden="true">
+          <span>Scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__visuals" aria-hidden="true">
+            <div class="about__img about__img--main reveal-left">
+              <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80"
+                alt="Barista crafting a coffee at Noir & Bean"
+                loading="lazy"
+              />
+            </div>
+            <div class="about__img about__img--accent reveal-left" style="--delay:0.2s">
+              <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80"
+                alt="Close up of a perfectly pulled espresso shot"
+                loading="lazy"
+              />
+            </div>
+            <div class="about__badge reveal-left" style="--delay:0.35s">
+              <strong>15+</strong>
+              <span>Years of Craft</span>
+            </div>
+          </div>
+
+          <div class="about__copy reveal-right">
+            <p class="section__eyebrow">Our Story</p>
+            <h2 id="about-heading" class="section__heading">Obsession<br /><em>brewed daily</em></h2>
+            <p class="about__para">Noir &amp; Bean was born from a single conviction: that coffee deserves the same reverence as wine. In 2019 our founder, Lena Adler, returned from Ethiopia with a suitcase of notes, altitude-grown beans, and an uncompromising palate.</p>
+            <p class="about__para">Today we source exclusively from elevation farms — Ethiopia, Yemen, Guatemala — where microclimates forge complexity no roaster can manufacture. Every batch is roasted in-house, on the day it's needed.</p>
+            <div class="about__pillars">
+              <div class="about__pillar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                <h3>Origin First</h3>
+                <p>Direct trade with 12 farms across 4 continents.</p>
+              </div>
+              <div class="about__pillar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21c5.02-5.12 7.33-6 14.18-3M3 21l2-7"/></svg>
+                <h3>Same-Day Roast</h3>
+                <p>Roasted on premises every morning at 5 am.</p>
+              </div>
+              <div class="about__pillar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <h3>Zero Compromise</h3>
+                <p>No blends, no shortcuts. Just exceptional coffee.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED COFFEE ===== -->
+    <section class="featured section" id="featured" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Signature Selections</p>
+          <h2 id="featured-heading" class="section__heading">Our <em>Featured</em> Coffees</h2>
+          <p class="section__sub">Hand-picked by our head barista. Limited availability each morning.</p>
+        </div>
+
+        <div class="featured__grid">
+          <!-- Card 1 -->
+          <article class="coffee-card reveal-up" style="--delay:0s">
+            <div class="coffee-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&q=80"
+                alt="Yirgacheffe Pour Over"
+                loading="lazy"
+                class="coffee-card__img"
+              />
+              <span class="coffee-card__tag">Bestseller</span>
+            </div>
+            <div class="coffee-card__body">
+              <h3 class="coffee-card__name">Yirgacheffe Pour Over</h3>
+              <p class="coffee-card__desc">Delicate jasmine florals, stone fruit sweetness, and a silky finish. Ethiopia's finest expression.</p>
+              <div class="coffee-card__footer">
+                <span class="coffee-card__price">$9.50</span>
+                <button class="btn btn--gold btn--sm ripple add-to-cart" data-item="Yirgacheffe Pour Over" data-price="9.50">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="coffee-card reveal-up" style="--delay:0.1s">
+            <div class="coffee-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500&q=80"
+                alt="Harar Natural Espresso"
+                loading="lazy"
+                class="coffee-card__img"
+              />
+              <span class="coffee-card__tag coffee-card__tag--new">New</span>
+            </div>
+            <div class="coffee-card__body">
+              <h3 class="coffee-card__name">Harar Natural Espresso</h3>
+              <p class="coffee-card__desc">Wild blueberry, dark chocolate, and bourbon finish. A rare natural process from ancient Ethiopian highlands.</p>
+              <div class="coffee-card__footer">
+                <span class="coffee-card__price">$7.00</span>
+                <button class="btn btn--gold btn--sm ripple add-to-cart" data-item="Harar Natural Espresso" data-price="7.00">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="coffee-card reveal-up" style="--delay:0.2s">
+            <div class="coffee-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1485808191679-5f86510bd9d4?w=500&q=80"
+                alt="Guatemalan Cold Brew Reserve"
+                loading="lazy"
+                class="coffee-card__img"
+              />
+              <span class="coffee-card__tag coffee-card__tag--limited">Limited</span>
+            </div>
+            <div class="coffee-card__body">
+              <h3 class="coffee-card__name">Guatemalan Cold Brew Reserve</h3>
+              <p class="coffee-card__desc">48-hour slow steep. Brown sugar, walnut, and a lingering caramel sweetness. Served over a single sphere of clear ice.</p>
+              <div class="coffee-card__footer">
+                <span class="coffee-card__price">$11.00</span>
+                <button class="btn btn--gold btn--sm ripple add-to-cart" data-item="Guatemalan Cold Brew Reserve" data-price="11.00">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Cart Notification (rendered at body level for correct fixed positioning) -->
+      </div>
+    </section>
+
+    <!-- ===== MENU ===== -->
+    <section class="menu section" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">The Full Menu</p>
+          <h2 id="menu-heading" class="section__heading">Every Cup,<br /><em>Perfected</em></h2>
+        </div>
+
+        <div class="menu__tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu__tab menu__tab--active" role="tab" aria-selected="true" data-tab="hot">Hot</button>
+          <button class="menu__tab" role="tab" aria-selected="false" data-tab="cold">Cold</button>
+          <button class="menu__tab" role="tab" aria-selected="false" data-tab="specialty">Specialty</button>
+        </div>
+
+        <div class="menu__panel" id="tab-hot" role="tabpanel">
+          <div class="menu__items">
+            <div class="menu__item reveal-up" style="--delay:0s">
+              <div class="menu__item-info">
+                <h3>Espresso</h3>
+                <p>Pure. Concentrated. 18g in, 36g out — a perfect double.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$4.50</span>
+              </div>
+            </div>
+            <div class="menu__item reveal-up" style="--delay:0.05s">
+              <div class="menu__item-info">
+                <h3>Flat White</h3>
+                <p>Velvety micro-foam over a ristretto base. Melbourne's gift to the world.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$5.50</span>
+              </div>
+            </div>
+            <div class="menu__item reveal-up" style="--delay:0.1s">
+              <div class="menu__item-info">
+                <h3>Cappuccino</h3>
+                <p>Equal thirds espresso, steamed milk, and dense foam. Textbook balance.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$5.50</span>
+              </div>
+            </div>
+            <div class="menu__item reveal-up" style="--delay:0.15s">
+              <div class="menu__item-info">
+                <h3>Latte</h3>
+                <p>Espresso softened by steamed milk. A daily companion, elevated.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$6.00</span>
+              </div>
+            </div>
+            <div class="menu__item reveal-up" style="--delay:0.2s">
+              <div class="menu__item-info">
+                <h3>Mocha</h3>
+                <p>Dark Peruvian cacao fused with espresso. Indulgence, restrained.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$6.50</span>
+              </div>
+            </div>
+            <div class="menu__item reveal-up" style="--delay:0.25s">
+              <div class="menu__item-info">
+                <h3>Americano</h3>
+                <p>Espresso diluted to reveal hidden complexity. The long black, refined.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$4.50</span>
+              </div>
+            </div>
+            <div class="menu__item reveal-up" style="--delay:0.3s">
+              <div class="menu__item-info">
+                <h3>Hot Chocolate</h3>
+                <p>Single-origin Valrhona 72% dark chocolate, steamed whole milk.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$6.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu__panel menu__panel--hidden" id="tab-cold" role="tabpanel">
+          <div class="menu__items">
+            <div class="menu__item">
+              <div class="menu__item-info">
+                <h3>Cold Brew</h3>
+                <p>48-hour steep, served over hand-cut block ice. Naturally sweet.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$7.00</span>
+              </div>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-info">
+                <h3>Iced Latte</h3>
+                <p>Double espresso over ice, topped with oat milk. Effortlessly smooth.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$6.50</span>
+              </div>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-info">
+                <h3>Nitro Cold Brew</h3>
+                <p>Cold brew infused with nitrogen. Cascading, creamy, extraordinary.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$8.00</span>
+              </div>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-info">
+                <h3>Iced Americano</h3>
+                <p>Espresso and cold water. Brisk, clean, and focused.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$5.50</span>
+              </div>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-info">
+                <h3>Cold Mocha</h3>
+                <p>Iced espresso, dark chocolate syrup, cold oat milk. Silky and bold.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$7.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu__panel menu__panel--hidden" id="tab-specialty" role="tabpanel">
+          <div class="menu__items">
+            <div class="menu__item">
+              <div class="menu__item-info">
+                <h3>Yuzu Honey Latte</h3>
+                <p>Espresso, steamed milk, house-made yuzu cordial, wildflower honey.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$8.50</span>
+              </div>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-info">
+                <h3>Cardamom Rose Cortado</h3>
+                <p>Ristretto, warm milk, rose water, green cardamom. Aromatic perfection.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$9.00</span>
+              </div>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-info">
+                <h3>Black Sesame Matcha</h3>
+                <p>Ceremonial matcha, oat milk, toasted black sesame paste.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$9.00</span>
+              </div>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-info">
+                <h3>Espresso Tonic</h3>
+                <p>Double espresso over sparkling tonic water and citrus peel.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$7.50</span>
+              </div>
+            </div>
+            <div class="menu__item">
+              <div class="menu__item-info">
+                <h3>Cacao Noir</h3>
+                <p>Dark cacao, espresso, black pepper, steamed oat milk. Complex warmth.</p>
+              </div>
+              <div class="menu__item-price-wrap">
+                <div class="menu__item-dots" aria-hidden="true"></div>
+                <span class="menu__item-price">$9.50</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPECIAL OFFERS ===== -->
+    <section class="offers section" id="offers" aria-labelledby="offers-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Limited Time</p>
+          <h2 id="offers-heading" class="section__heading">Special <em>Offers</em></h2>
+        </div>
+
+        <div class="offers__grid">
+          <article class="offer-card reveal-up" style="--delay:0s">
+            <div class="offer-card__glow" aria-hidden="true"></div>
+            <div class="offer-card__tag">20% OFF</div>
+            <h3 class="offer-card__title">Morning Ritual Bundle</h3>
+            <p class="offer-card__desc">Any pour-over + a croissant before 9am. Start the day the right way.</p>
+            <div class="offer-card__timer" aria-label="Offer countdown">
+              <div class="timer__block"><span class="timer__num" id="timer-d1">00</span><span class="timer__label">Days</span></div>
+              <div class="timer__sep" aria-hidden="true">:</div>
+              <div class="timer__block"><span class="timer__num" id="timer-h1">00</span><span class="timer__label">Hrs</span></div>
+              <div class="timer__sep" aria-hidden="true">:</div>
+              <div class="timer__block"><span class="timer__num" id="timer-m1">00</span><span class="timer__label">Min</span></div>
+              <div class="timer__sep" aria-hidden="true">:</div>
+              <div class="timer__block"><span class="timer__num" id="timer-s1">00</span><span class="timer__label">Sec</span></div>
+            </div>
+            <a href="#reservation" class="btn btn--gold btn--sm ripple">Claim Offer</a>
+          </article>
+
+          <article class="offer-card offer-card--featured reveal-up" style="--delay:0.15s">
+            <div class="offer-card__glow" aria-hidden="true"></div>
+            <div class="offer-card__tag offer-card__tag--alt">Buy 2 Get 1</div>
+            <h3 class="offer-card__title">Weekend Trio</h3>
+            <p class="offer-card__desc">Every Saturday and Sunday — order any two drinks and receive the third of equal or lesser value free.</p>
+            <div class="offer-card__timer" aria-label="Offer countdown">
+              <div class="timer__block"><span class="timer__num" id="timer-d2">00</span><span class="timer__label">Days</span></div>
+              <div class="timer__sep" aria-hidden="true">:</div>
+              <div class="timer__block"><span class="timer__num" id="timer-h2">00</span><span class="timer__label">Hrs</span></div>
+              <div class="timer__sep" aria-hidden="true">:</div>
+              <div class="timer__block"><span class="timer__num" id="timer-m2">00</span><span class="timer__label">Min</span></div>
+              <div class="timer__sep" aria-hidden="true">:</div>
+              <div class="timer__block"><span class="timer__num" id="timer-s2">00</span><span class="timer__label">Sec</span></div>
+            </div>
+            <a href="#reservation" class="btn btn--gold btn--sm ripple">Claim Offer</a>
+          </article>
+
+          <article class="offer-card reveal-up" style="--delay:0.3s">
+            <div class="offer-card__glow" aria-hidden="true"></div>
+            <div class="offer-card__tag">Members Only</div>
+            <h3 class="offer-card__title">Reserve Series Access</h3>
+            <p class="offer-card__desc">Loyalty members get first access to our monthly Reserve Series — rare micro-lots, one day early.</p>
+            <div class="offer-card__timer" aria-label="Offer countdown">
+              <div class="timer__block"><span class="timer__num" id="timer-d3">00</span><span class="timer__label">Days</span></div>
+              <div class="timer__sep" aria-hidden="true">:</div>
+              <div class="timer__block"><span class="timer__num" id="timer-h3">00</span><span class="timer__label">Hrs</span></div>
+              <div class="timer__sep" aria-hidden="true">:</div>
+              <div class="timer__block"><span class="timer__num" id="timer-m3">00</span><span class="timer__label">Min</span></div>
+              <div class="timer__sep" aria-hidden="true">:</div>
+              <div class="timer__block"><span class="timer__num" id="timer-s3">00</span><span class="timer__label">Sec</span></div>
+            </div>
+            <a href="#reservation" class="btn btn--ghost btn--sm ripple">Join Loyalty</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Inside Noir &amp; Bean</p>
+          <h2 id="gallery-heading" class="section__heading">The <em>Atmosphere</em></h2>
+        </div>
+
+        <div class="gallery__masonry" role="list">
+          <div class="gallery__item reveal-up" style="--delay:0s" role="listitem">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Café interior with warm lighting" loading="lazy" />
+            <div class="gallery__item-overlay" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+          </div>
+          <div class="gallery__item gallery__item--tall reveal-up" style="--delay:0.1s" role="listitem">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80" alt="Coffee beans being roasted" loading="lazy" />
+            <div class="gallery__item-overlay" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+          </div>
+          <div class="gallery__item reveal-up" style="--delay:0.2s" role="listitem">
+            <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=600&q=80" alt="Latte art in a white cup" loading="lazy" />
+            <div class="gallery__item-overlay" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+          </div>
+          <div class="gallery__item gallery__item--wide reveal-up" style="--delay:0.3s" role="listitem">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80" alt="Cozy reading corner of the café" loading="lazy" />
+            <div class="gallery__item-overlay" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+          </div>
+          <div class="gallery__item reveal-up" style="--delay:0.4s" role="listitem">
+            <img src="https://images.unsplash.com/photo-1493925410384-84f842d402af?w=600&q=80" alt="Barista grinding fresh coffee" loading="lazy" />
+            <div class="gallery__item-overlay" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+          </div>
+          <div class="gallery__item reveal-up" style="--delay:0.5s" role="listitem">
+            <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&q=80" alt="Vintage coffee grinder on marble counter" loading="lazy" />
+            <div class="gallery__item-overlay" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox__close" id="lightbox-close" aria-label="Close lightbox">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <button class="lightbox__nav lightbox__prev" id="lightbox-prev" aria-label="Previous image">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+        <button class="lightbox__nav lightbox__next" id="lightbox-next" aria-label="Next image">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials section" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">What People Say</p>
+          <h2 id="testimonials-heading" class="section__heading">The <em>Verdict</em></h2>
+        </div>
+
+        <div class="testimonial__carousel" aria-live="polite">
+          <div class="testimonial__track" id="testimonial-track">
+
+            <article class="testimonial__slide">
+              <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="testimonial__quote">"The Yirgacheffe pour over changed the way I think about coffee. I've been to third-wave cafés across three continents — Noir &amp; Bean belongs at the very top."</blockquote>
+              <div class="testimonial__author">
+                <img src="https://i.pravatar.cc/80?img=47" alt="Portrait of James K." loading="lazy" />
+                <div>
+                  <strong>James K.</strong>
+                  <span>Coffee Blogger, London</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial__slide">
+              <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="testimonial__quote">"The atmosphere is unlike anything in the city. Dark, intimate, yet never pretentious. I come here every morning and I'll never stop."</blockquote>
+              <div class="testimonial__author">
+                <img src="https://i.pravatar.cc/80?img=9" alt="Portrait of Amara S." loading="lazy" />
+                <div>
+                  <strong>Amara S.</strong>
+                  <span>Architect, New York</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial__slide">
+              <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="testimonial__quote">"I brought my most demanding client here for a working morning. The Cardamom Rose Cortado sealed the deal. Now he's a regular too."</blockquote>
+              <div class="testimonial__author">
+                <img src="https://i.pravatar.cc/80?img=32" alt="Portrait of Marcus T." loading="lazy" />
+                <div>
+                  <strong>Marcus T.</strong>
+                  <span>Creative Director, Berlin</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial__slide">
+              <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="testimonial__quote">"I've tried every specialty café in the neighbourhood. Nothing comes close to the precision and care that goes into every single cup here."</blockquote>
+              <div class="testimonial__author">
+                <img src="https://i.pravatar.cc/80?img=25" alt="Portrait of Yuki N." loading="lazy" />
+                <div>
+                  <strong>Yuki N.</strong>
+                  <span>Food Writer, Tokyo</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="testimonial__controls">
+          <button class="testimonial__btn" id="prev-testimonial" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="testimonial__dots" id="testimonial-dots" role="tablist" aria-label="Testimonial navigation"></div>
+          <button class="testimonial__btn" id="next-testimonial" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATISTICS ===== -->
+    <section class="stats section" id="stats" aria-labelledby="stats-heading">
+      <div class="container">
+        <h2 id="stats-heading" class="sr-only">Our Statistics</h2>
+        <div class="stats__grid">
+          <div class="stats__item reveal-up" style="--delay:0s">
+            <span class="stats__num" data-target="48500" data-suffix="+">0</span>
+            <span class="stats__label">Happy Customers</span>
+          </div>
+          <div class="stats__item reveal-up" style="--delay:0.1s">
+            <span class="stats__num" data-target="320000" data-suffix="+">0</span>
+            <span class="stats__label">Coffees Served</span>
+          </div>
+          <div class="stats__item reveal-up" style="--delay:0.2s">
+            <span class="stats__num" data-target="12" data-suffix="">0</span>
+            <span class="stats__label">Origin Farms</span>
+          </div>
+          <div class="stats__item reveal-up" style="--delay:0.3s">
+            <span class="stats__num" data-target="24" data-suffix="">0</span>
+            <span class="stats__label">Industry Awards</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESERVATION ===== -->
+    <section class="reservation section" id="reservation" aria-labelledby="reservation-heading">
+      <div class="container">
+        <div class="reservation__inner">
+          <div class="reservation__copy reveal-left">
+            <p class="section__eyebrow">Reserve a Seat</p>
+            <h2 id="reservation-heading" class="section__heading">Secure Your<br /><em>Experience</em></h2>
+            <p>Tables at Noir &amp; Bean are limited by design. We prefer depth over volume — a smaller room means every guest receives our full attention.</p>
+            <div class="reservation__meta">
+              <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg><span>12 Greystone Lane, Downtown</span></div>
+              <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon–Fri 7am–8pm · Sat–Sun 8am–9pm</span></div>
+            </div>
+          </div>
+
+          <form class="reservation__form reveal-right" id="reservation-form" novalidate aria-label="Reservation form">
+            <div class="form__row">
+              <div class="form__group">
+                <label for="res-name">Full Name</label>
+                <input type="text" id="res-name" name="name" placeholder="Your name" autocomplete="name" required />
+                <span class="form__error" id="err-name" role="alert"></span>
+              </div>
+              <div class="form__group">
+                <label for="res-phone">Phone</label>
+                <input type="tel" id="res-phone" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel" required />
+                <span class="form__error" id="err-phone" role="alert"></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="res-email">Email</label>
+              <input type="email" id="res-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+              <span class="form__error" id="err-email" role="alert"></span>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="res-date">Date</label>
+                <input type="date" id="res-date" name="date" required />
+                <span class="form__error" id="err-date" role="alert"></span>
+              </div>
+              <div class="form__group">
+                <label for="res-time">Time</label>
+                <input type="time" id="res-time" name="time" required />
+                <span class="form__error" id="err-time" role="alert"></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="res-guests">Number of Guests</label>
+              <select id="res-guests" name="guests" required>
+                <option value="" disabled selected>Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests (Private Room)</option>
+              </select>
+              <span class="form__error" id="err-guests" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--gold ripple btn--full">Confirm Reservation</button>
+            <div class="form__success" id="form-success" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Find Us</p>
+          <h2 id="contact-heading" class="section__heading">Visit <em>Noir &amp; Bean</em></h2>
+        </div>
+
+        <div class="contact__grid">
+          <!-- Map Placeholder -->
+          <div class="contact__map reveal-left" aria-label="Map location placeholder">
+            <div class="contact__map-inner">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <p>12 Greystone Lane<br />Downtown District</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm ripple">Open in Maps</a>
+            </div>
+          </div>
+
+          <!-- Contact Details -->
+          <div class="contact__details reveal-right">
+            <div class="contact__item">
+              <div class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div>
+                <h3>Address</h3>
+                <p>12 Greystone Lane, Downtown District<br />New York, NY 10001</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+12125550100">+1 (212) 555-0100</a></p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:hello@noirandbean.com">hello@noirandbean.com</a></p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h3>Hours</h3>
+                <p>Monday – Friday: 7:00 AM – 8:00 PM<br />Saturday – Sunday: 8:00 AM – 9:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top container">
+      <div class="footer__brand">
+        <a href="#hero" class="nav__logo" aria-label="Back to top">
+          <span class="nav__logo-mark">N&amp;B</span>
+          <span class="nav__logo-name">Noir <em>&amp;</em> Bean</span>
+        </a>
+        <p>Obsessively sourced. Meticulously roasted. Served with intention.</p>
+        <div class="footer__social" aria-label="Social media links">
+          <a href="#" aria-label="Instagram" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter / X" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.78 1.52V6.75a4.85 4.85 0 01-1.02-.06z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <ul role="list">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reservation">Reservations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4>Experience</h4>
+        <ul role="list">
+          <li><a href="#">Brewing Classes</a></li>
+          <li><a href="#">Coffee Subscriptions</a></li>
+          <li><a href="#">Private Events</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Loyalty Program</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__newsletter">
+        <h4>The Inner Circle</h4>
+        <p>Reserve series drops, exclusive offers, and stories from origin — delivered weekly.</p>
+        <form class="newsletter__form" id="newsletter-form" novalidate aria-label="Newsletter subscription">
+          <div class="newsletter__input-wrap">
+            <input type="email" id="newsletter-email" placeholder="your@email.com" autocomplete="email" required aria-label="Email for newsletter" />
+            <button type="submit" class="btn btn--gold ripple" aria-label="Subscribe">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+          <span class="newsletter__msg" id="newsletter-msg" role="alert" aria-live="polite"></span>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom container">
+      <p>&copy; <span id="year"></span> Noir &amp; Bean. All rights reserved.</p>
+      <nav aria-label="Legal links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Cart Toast (global, outside any transform/filter context) -->
+  <div class="cart-toast" id="cart-toast" role="alert" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
