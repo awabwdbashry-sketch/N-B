@@ -349,7 +349,7 @@ index.html
 
 # 👨‍💻 Developer
 
-**Awab W. Bashry**
+**Awab Bashary | AwabBuilds**
 
 Built with ☕ + 💻 + ✨
 
@@ -716,7 +716,7 @@ The website uses external imagery from **Unsplash** and fonts from **Google Font
 
 # 👨‍💻 Developer
 
-**Awab W. Bashry**
+**Awab Bashary | AwabBuilds**
 
 Built with ☕ + 💻 + ✨
 
